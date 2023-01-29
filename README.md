@@ -28,6 +28,10 @@ go mod tidy && go build AriaNg-service.go
 + reinstall  : delate old AriaNg release and install new +
 +--------------------------------------------------------+
 ```
+```bash
+./AriaNg-service install
+./AriaNg-service start
+```
 
 # CN
 ## AriaNg-service
@@ -56,4 +60,8 @@ go mod tidy && go build AriaNg-service.go
 + install    : install AriaNg least release              +
 + reinstall  : delate old AriaNg release and install new +
 +--------------------------------------------------------+
+```
+```bash
+./AriaNg-service install
+./AriaNg-service start
 ```
