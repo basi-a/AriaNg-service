@@ -4,4 +4,4 @@ if [ -f "best_aria2.txt" ];then
 fi
 wget https://trackerslist.com/best_aria2.txt -q --show-progress
 list="`cat best_aria2.txt`"
-sed -i "s\bt-tracker=\bt-tracker=${list}\g" aria2c.conf.example
+sed -i "s\bt-tracker=\bt-tracker=${list}\g" aria2.conf.example

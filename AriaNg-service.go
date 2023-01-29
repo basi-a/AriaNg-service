@@ -17,7 +17,7 @@ var SHELL = "/bin/bash"
 
 // start aria2c and py_http.server with shell
 func start() {
-  aria2_start := "aria2c --enable-rpc --rpc-listen-all=true --rpc-allow-origin-all -c -D"
+  aria2_start := "aria2c --conf-path=$HOME/.aria2/aria2.conf -D"
   py_httpd_start := "nohup python -m http.server --directory AriaNg-source >/dev/null 2>&1 &"
 
   aria2c_cmd := exec.Command( SHELL, "-c", aria2_start )
