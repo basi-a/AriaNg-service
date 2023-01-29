@@ -49,7 +49,7 @@ func start() {
 另外BT需要更新 `bt-tracker`, 可以按顺序使用以下脚本（ 当配置文件使用的是上面的时 ）:
 ```bash
 ./update-tracker.sh
-./use-dotfile.sh
+./use-dotfile.sh #Only required if it has not been run
 ```
 ***************
 # EN
@@ -103,7 +103,7 @@ Example script:
 In addition, BT needs to update `bt-tracker`, you can use the following scripts in order (when the configuration file is using the above):
 ```bash
 ./update-tracker.sh
-./use-dotfile.sh
+./use-dotfile.sh #Only required if it has not been run
 ```
 
 # Thanks all for these 
