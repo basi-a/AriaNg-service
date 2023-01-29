@@ -65,3 +65,5 @@ go mod tidy && go build AriaNg-service.go
 ./AriaNg-service install
 ./AriaNg-service start
 ```
+# Thank for mayswind/AriaNg
+
