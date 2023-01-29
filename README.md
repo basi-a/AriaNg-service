@@ -105,7 +105,8 @@ In addition, BT needs to update `bt-tracker`, you can use the following scripts 
 ./update-tracker.sh
 ./use-dotfile.sh #Only required if it has not been run
 ```
-
+# ScreenShot
+![screenshot](screenshot.png)
 # Thanks all for these 
 - [mayswind/AriaNg](https://github.com/mayswind/AriaNg)
 - [XIU2/TrackersListCollection](https://github.com/XIU2/TrackersListCollection)
