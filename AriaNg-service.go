@@ -8,6 +8,7 @@ import (
 	"os"
 	"os/exec"
 	"strings"
+	"time"
 
 	"github.com/schollz/progressbar/v3"
 )
@@ -66,6 +67,7 @@ func args()  {
     stop()
   case "restart":
     stop()
+    time.Sleep(time.Second*3)
     start()
   case "install":
     install()
