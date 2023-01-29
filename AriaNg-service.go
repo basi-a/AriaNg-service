@@ -67,6 +67,7 @@ func args()  {
     stop()
   case "restart":
     stop()
+    fmt.Println("Wait a few seconds ...")
     time.Sleep(time.Second*3)
     start()
   case "install":
