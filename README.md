@@ -4,11 +4,11 @@
 A Mini program to start, stop install the "mayswind/AriaNg" latest release
 ### install
 Rely on `jq wget unzip go lsof`
-Resolve dependencies example Archlinux
+Solve dependencies, take archlinux as an example
 ```bash
 sudo pacman -S jq wget unzip go lsof
 ```
-Get source code and build to binary file
+Obtain the source code and compile it into an executable binary
 ```bash
 git clone https://github.com/basi-a/AriaNg-service.git
 cd AriaNg-service
@@ -24,6 +24,7 @@ go mod tidy && go build AriaNg-service.go
 + help       : show help                                 +
 + start      : start AriaNg                              +
 + stop       : stop AriaNg                               +
++ restart    : restart AriaNg                            +
 + install    : install AriaNg least release              +
 + reinstall  : delate old AriaNg release and install new +
 +--------------------------------------------------------+
@@ -31,6 +32,11 @@ go mod tidy && go build AriaNg-service.go
 ```bash
 ./AriaNg-service install
 ./AriaNg-service start
+```
+If you don't have `aria2c.conf`, you can use `aria2c.conf.example` to create a soft connection to `$HOME/.aria2c/aria2c.conf`.
+Example script:
+```bash
+./use-dotfile.sh
 ```
 
 # CN
@@ -57,6 +63,7 @@ go mod tidy && go build AriaNg-service.go
 + help       : show help                                 +
 + start      : start AriaNg                              +
 + stop       : stop AriaNg                               +
++ restart    : restart AriaNg                            +
 + install    : install AriaNg least release              +
 + reinstall  : delate old AriaNg release and install new +
 +--------------------------------------------------------+
@@ -64,6 +71,11 @@ go mod tidy && go build AriaNg-service.go
 ```bash
 ./AriaNg-service install
 ./AriaNg-service start
+```
+如果您没有`aria2c.conf`，则可以使用 `aria2c.conf.example` 创建软连接到 `$HOME/.aria2c/aria2c.conf`。
+示例脚本：
+```bash
+./use-dotfile.sh
 ```
 # Thank for mayswind/AriaNg
 

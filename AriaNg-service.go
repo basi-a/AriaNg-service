@@ -64,6 +64,9 @@ func args()  {
     start()
   case "stop":
     stop()
+  case "restart":
+    stop()
+    start()
   case "install":
     install()
   case "reinstall":
@@ -82,6 +85,7 @@ func help()  {
   fmt.Println("+ help       : show help                                 +")
   fmt.Println("+ start      : start AriaNg                              +")
   fmt.Println("+ stop       : stop AriaNg                               +")
+  fmt.Println("+ restart    : restart AriaNg                            +")
   fmt.Println("+ install    : install AriaNg least release              +")
   fmt.Println("+ reinstall  : delate old AriaNg release and install new +")
   fmt.Println("+--------------------------------------------------------+")
