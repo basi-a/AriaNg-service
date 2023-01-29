@@ -149,5 +149,5 @@ bt-save-metadata=true
 
 bt-max-open-files=16
 
-# bt-tracker
+# bt-tracker config
 bt-tracker=
