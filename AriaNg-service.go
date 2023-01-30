@@ -153,7 +153,13 @@ func install()  {
   if err != nil {
     log.Fatalln("download err ==>",err)
   }
-  defer file.Close()
+  // defer file.Close()
+  defer func() {
+    err := file.Close()
+    if err != nil {
+      log.Fatalln("defer close file fail ==>", err)
+    }
+  }()
 
   //create a progressbar for downloading
   bar := progressbar.NewOptions(
