@@ -96,6 +96,9 @@ rpc-listen-port=6800
 # 在 RPC 服务中启用 SSL/TLS 加密时的私钥文件
 #rpc-private-key=/home/---/to/certificate.key
 
+# Http/FTP 相关
+connect-timeout=120
+
 ## BT/PT下载相关 ## ============================================================
 # 当下载的是一个种子(以.torrent结尾)时, 自动开始BT任务, 默认:true
 follow-torrent=true
@@ -107,22 +110,22 @@ listen-port=51413
 #bt-max-peers=55
 
 # 打开DHT功能, PT需要禁用, 默认:true
-enable-dht=false
+enable-dht=true
 
 # 打开IPv6 DHT功能, PT需要禁用
-#enable-dht6=false
+enable-dht6=true
 
 # DHT网络监听端口, 默认:6881-6999
-#dht-listen-port=6881-6999
+dht-listen-port=6881-6999
 
-dht-file-path=/opt/var/aria2/dht.dat
-dht-file-path6=/opt/var/aria2/dht6.dat
+dht-file-path=/home/---/.aria2/dht.dat
+dht-file-path6=/home/---/.aria2/dht6.dat
 
 # 本地节点查找, PT需要禁用, 默认:false
 bt-enable-lpd=true
 
 # 种子交换, PT需要禁用, 默认:true
-enable-peer-exchange=false
+enable-peer-exchange=true
 
 # 每个种子限速, 对少种的PT很有用, 默认:50K
 bt-request-peer-speed-limit=5M
@@ -149,6 +152,3 @@ bt-save-metadata=true
 bt-max-open-files=16
 
 bt-tracker=
-
-# Http/FTP 相关
-connect-timeout=120
