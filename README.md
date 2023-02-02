@@ -12,7 +12,7 @@ sudo pacman -S jq wget unzip go lsof aria2c
 ```bash
 git clone https://github.com/basi-a/AriaNg-service.git
 cd AriaNg-service
-go mod tidy && go build AriaNg-service.go
+go mod tidy && go build
 ```
 ### 如何食用
 ```bash
@@ -65,7 +65,7 @@ Obtain the source code and compile it into an executable binary
 ```bash
 git clone https://github.com/basi-a/AriaNg-service.git
 cd AriaNg-service
-go mod tidy && go build AriaNg-service.go
+go mod tidy && go build
 ```
 
 ### How to Use
